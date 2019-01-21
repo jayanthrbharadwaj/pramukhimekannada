@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link type="text/css" href="css/bootstrap.min.css" rel="Stylesheet"/>
+  <link type="text/css" href="css/default.css" rel="Stylesheet"/>
+  <link type="text/css" href="css/pramukhindic.css" rel="Stylesheet"/>
+  <link type="text/css" href="css/pramukhtypepad.css" rel="Stylesheet"/>
+</head>
+<body>
+<textarea id="typingarea" name="typingarea" rows="5" cols="64" class="bigger" spellcheck="false"
+          autocomplete="off" autocorrect="off" autocapitalize="off" autosuggest="off"></textarea>
+<script type="text/javascript" src="js/pramukhime.js"></script>
+<script type="text/javascript" src="js/pramukhindic.js"></script>
+<script type="text/javascript" src="js/pramukhindic-i18n.js"></script>
+
+<script type="text/javascript">
+  // focus on textbox
+  document.getElementById('typingarea').focus();
+  // Setup pramukhIME
+
+  // Add the keyboard plugin
+  pramukhIME.addKeyboard("PramukhIndic");
+
+  // Register call back (PRO VERSION ONLY)
+  //pramukhIME.on('languagechange', languageChangeCallback);
+
+  // Enable on whole page
+  pramukhIME.enable();
+  pramukhIME.setLanguage('kannada', 'pramukhindic');
+</script>
+</body>
+</html>
